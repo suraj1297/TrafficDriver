@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrafficDriver</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" type="module"></script>
+</head>
+
+<body>
+  <div class="canvas-container">
+    <canvas id="canvas"></canvas>
+    <div class="board">
+      <div class="speed">10 Km/Hr</div>
+      <div class="timer">TIME LEFT 00:00</div>
+      <div class="goal">00 KMs LEFT</div>
+    </div>
+    <div class="crash">
+      <p id="playAgain" style="color: #ea5455;">PRESS ENTER TO PLAY AGAIN</p>
+      <img src="images/carcrash45.png" alt="">
+    </div>
+  </div>
+
+  <div class="win">
+    <div class="win-container">
+      <div class="timeTaken">
+        <p>Time Taken To Finish</p>
+        <p id="time-taken-number"></p>
+      </div>
+      <div class="previousTime">
+        <p>Your Best Time Ever</p>
+        <p id="previous-time-number">00 min 00 secs</p>
+      </div>
+      <p id="start">PLAY AGAIN<p>
+    </div>
+  </div>
+
+  <div class="lost">
+    <p class="lost-text">You Just Lost The Game</p>
+    <div id="play-again">PLAY AGAIN</div>
+  </div>
+
+  <audio src="assests/bgmusic.wav" autoplay loop>
+  </audio>
+
+</body>
+
+</html>
